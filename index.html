@@ -1,0 +1,834 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Алгебра</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style>
+			
+
+		</style>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+					Алгебра
+					========
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+						А́лгебра (от араб. اَلْجَبْر аль-джабр «восполнение») - это раздел математики, посвящённый изучению операций над элементами множеств произвольной природы, обобщающий обычные операции сложения и умножения чисел.			
+						
+					</script>
+				</section>
+				
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Классификация
+
+						Алгебра как раздел математики включает следующие категории:
+						 - Элементарная алгебра
+
+						 - Линейная алгебра
+
+						 - Общая алгебра
+		
+						 - Алгебраическая комбинаторика
+						
+						
+					</script>
+				</section>
+
+				
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						Элементарная алгебра
+						--------------------
+						
+					</script>
+				</section>
+
+				<section>
+
+					<section data-markdown>
+						
+						<script type="text/template">
+							### Определение						
+							
+							Элементарная алгебра — раздел алгебры, в котором изучаются свойства операций с вещественными и комплексными числами.
+							В ней постоянные и переменные обозначаются буквенными символами. 
+							
+							Элементарная алгебра содержит правила преобразования алгебраических выражений и уравнений с использованием этих символов.
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						
+						<script type="text/template">
+							### Определение						
+							
+							Элементарная алгебра обычно изучается после изучения основных понятий арифметики. В арифметике изучаются числа и простейшие действия с ними, такие, как сложение, вычитание, умножение и деление.
+							
+							
+						</script>
+					</section>
+
+				</section>
+				
+
+				<section>
+					<section data-markdown>
+						
+						<script type="text/template">
+							### Определение
+						
+							Замена чисел переменными в алгебре полезна по нескольким причинам:
+
+							-  Позволяет получить общее представление законов арифметики. Например, 
+							$$ 
+								a+b = b+a  \quad \forall a,b 
+							$$
+							что является первым шагом к систематическому изучению свойств действительных чисел.
+
+						</script>
+					</section>
+					<section data-markdown>
+						
+						<script type="text/template">
+							### Определение
+						
+							- Позволяет ввести понятие «неизвестного», сформулировать уравнения и изучать способы их решения. 
+							
+							Например, 
+							"Найти число $x$, такое что $3x+1=10$  или, в более общем случае, найти число $x$, такое, что $ax+b=c$".
+
+							Это приводит к выводу, что нахождение значения переменной кроется не в природе чисел из уравнения, а в операциях между ними.
+
+						</script>
+					</section>
+					<section data-markdown>
+						
+						<script type="text/template">
+							### Определение
+						
+							- Позволяет сформулировать понятие функции. 
+							
+							Например, 
+							«Если вы продали $x$ билетов, то ваша прибыль составит $ 3x-10$ рублей, или $ f(x)=3x-10$, где $f$ — функция, и $x$ — число, от которого зависит функция»
+
+						</script>
+					</section>
+
+				</section>
+
+				<section data-background-image="img/funny2.jpg" 
+					data-background-size="contain" 
+					
+					data-menu-title="Смешная картинка1">
+				</section>
+
+				
+				<section data-markdown>
+					
+					<script type="text/template">
+						Линейная алгебра
+						----------------
+					
+					</script>
+				</section>
+
+			
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+						Линейная алгебра - раздел алгебры, изучающая векторы, векторные, или линейные пространства, линейные отображения и системы линейных уравнений. 
+						
+						К линейной алгебре также относят теорию определителей, теорию матриц, теорию форм (например, квадратичных) и др.
+						
+						Современная линейная алгебра делает акцент на изучении векторных пространств
+
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						Матрицы
+						-------
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+
+						Ма́трица — математический объект, записываемый в виде прямоугольной таблицы элементов, который представляет собой совокупность строк и столбцов, на пересечении которых находятся его элементы. 
+						
+						$$
+						A_{mn} = 
+						\begin{pmatrix}
+							a_{11} & a_{12} & ... & a_{1n}  \newline
+							a_{21} & a_{22} & ... & a_{2n} \newline
+							... & ... & ... & ... \newline
+							a_{m1} & a_{m2} & ... & a_{mn} 
+						\end{pmatrix}
+						$$
+
+						
+					</script>
+				</section>
+
+
+
+			<section>
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+
+						Количество строк и столбцов задает размер матрицы. В качестве примера использована матрица $m \times n$ .
+						
+						Если у матрицы количество строк $m$ совпадает с количеством столбцов $n$, то такая матрица называется квадратной, а число $m = n$ называется размером квадратной матрицы или её порядком.
+
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+
+						Матрица размера $m \times 1$ называется вектор-столбцом и записывается следующим образом:
+
+						$$\begin{pmatrix}
+							a_{1} \newline
+							a_{2} \newline
+							... \newline
+							a_{m}
+						\end{pmatrix}
+						$$
+
+						
+					</script>
+				</section>
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Определение
+
+						Матрица размера $1 \times n$ называется вектор-строкой и записывается следующим образом:
+
+						$$
+						\begin{pmatrix}
+							a_{1} & a_{2} & ... & a_{n}
+						\end{pmatrix}
+						$$
+
+						
+					</script>
+				</section>
+
+			</section>	
+	
+
+
+
+			<section>	
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Виды матриц
+
+						- Транспонированная
+
+						- Симметричная
+
+						- Треугольная 
+
+						- Диагональная
+
+						- Единичная
+
+						- Нулевая 
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Транспонированная матрица
+
+						Формально, транспонированная матрица для матрицы $A$ размеров $m \times n$ — матрица $A^{T}$ размеров $n \times m$, определённая как $A_{ij}^{T}=A_{ji}$.
+						
+						Пример транспонированной матрицы:
+
+						$
+							A =
+						\begin{pmatrix}
+						1 & 2 \newline
+						3 & 4
+						\end{pmatrix}
+						$
+						$
+						A^T =
+						\begin{pmatrix}
+						1 & 3 \newline
+						2 & 4 
+						\end{pmatrix}
+						$
+						
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Симметричная матрица
+
+						Симметричной называют квадратную матрицу, элементы которой симметричны относительно главной диагонали. 
+						$A :\forall$ $i$,$j$: $a_{ij} = a_{ji}$. 
+						
+						Это означает, что она равна её транспонированной матрице: $A = A^T$
+
+						Примеры симметричных матриц:
+
+						
+						$
+							A_{1} =
+						\begin{pmatrix}
+						1 & 4 \newline
+						4 & 3
+						\end{pmatrix}
+						$
+						$
+						A_{2} =
+						\begin{pmatrix}
+						2 & 4 & 3\newline
+						4 & 5 & 6\newline
+						3 & 6 & 1
+						\end{pmatrix}
+						$
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Треугольная матрица
+
+						Треуго́льная ма́трица — квадратная матрица, у которой все элементы, стоящие выше (или ниже) главной диагонали, равны нулю.
+						
+						Примеры треугольных матриц:
+
+						
+						$
+							A_{1} =
+						\begin{pmatrix}
+						2 & 4 & 3\newline
+						0 & 5 & 6\newline
+						0 & 0 & 1
+						\end{pmatrix}
+						$
+						$
+						A_{2} =
+						\begin{pmatrix}
+						7 & 0 & 0\newline
+						1 & 5 & 0\newline
+						3 & 8 & 1
+						\end{pmatrix}
+						$
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Диагональная матрица
+
+						Диагональная матрица — квадратная матрица, все элементы которой, стоящие вне главной диагонали, равны нулю:
+						
+						Пример диагольной матрицы:
+						
+						$
+							A =
+						\begin{pmatrix}
+						2 & 0 & 0\newline
+						0 & 5 & 0\newline
+						0 & 0 & 4
+						\end{pmatrix}
+						$
+					
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Единичная матрица
+
+						Едини́чная ма́трица — квадратная матрица, элементы главной диагонали которой равны единице, а остальные равны нулю.
+
+						Примеры единичных матриц:
+
+						$
+							I_{1} =
+						\begin{pmatrix}
+						1 
+						\end{pmatrix}
+						$
+						$
+							I_{2} =
+						\begin{pmatrix}
+						1 & 0 \newline
+						0 & 1
+						\end{pmatrix}
+						$
+						$
+						I_{3} =
+						\begin{pmatrix}
+						1 & 0 & 0\newline
+						0 & 1 & 0\newline
+						0 & 0 & 1
+						\end{pmatrix}
+						$
+						
+					</script>
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### Нулевая матрица
+
+						Нулева́я ма́трица — это матрица, размера $m \times n$ все элементы которой равны нулю
+
+						$$
+						O_{mn} = 
+						\begin{pmatrix}
+							0 & 0 & ... & 0 \newline
+							0 & 0 & ... & 0 \newline
+							... & ... & ... & ... \newline
+							0 & 0 & ... & 0
+						\end{pmatrix}
+						$$
+					</script>
+				</section>
+
+
+			</section>	
+			<!-- 
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						### roll-yaw-pitch
+						![rollyawpitch](img/rollyawpitch.png)
+						
+					</script>
+				</section>
+				-->
+
+				
+					<section data-markdown>
+						
+						<script type="text/template">
+							Определитель (детерминант) матрицы 
+							--------------------
+
+
+						</script>
+					</section>
+				
+				<section>
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+	
+							Определителем матрицы $A_{nn}=(a_{ij})$ называется число, вычисляемое по формуле:
+
+							$$
+							\Delta = detA =\sum\limits_{\alpha_1, \alpha_2, \ldots,\alpha_n} (-1)^{N(\alpha_1, \alpha_2, \ldots,\alpha_n)} \cdot a_{1\alpha_1}a_{2\alpha_2}\ldots a_{n\alpha_n},
+							$$
+
+							где суммирование проводится по всем перестановкам  $\alpha _{1}$, $\alpha _{2}$, $\ldots$ , $\alpha _{n}$  чисел 
+							$ 1,2,\dots ,n$, а $N(\alpha_1, \alpha_2, \ldots,\alpha_n)$ - обозначает число инверсий в перестановке $\alpha_1, \alpha_2, \ldots,\alpha_n.$ 
+						</script>
+					</section>
+
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+	
+							В определитель входит $ n!=1\cdot 2\cdot\ldots \cdot n$ слагаемых, которые называют «членами определителя».
+
+							*Перестано́вка* в комбинаторике — упорядоченный набор без повторений чисел $ 1,2,\dots ,n$. 
+							
+							Пусть перестановка $A  = (a_1, a_2, \ldots, a_n)$. Если $(a_i > a_j)$ & $(i < j)$, то пара элементов $(a_i,a_j)$ образует *инверсию*.
+
+
+						</script>
+					</section>
+
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+
+							Для матрицы первого порядка значение детерминанта равно единственному элементу этой матрицы:
+
+							$$
+							\Delta = detA = 
+							\begin{vmatrix}
+							a_{11} 
+							\end{vmatrix}
+							$$
+							
+	
+
+						</script>
+					</section>
+
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+	
+							Например, определитель для матрицы $A_{22}$ будет вычисляться следующим образом:
+
+							$$
+							\Delta = detA_{22} = 
+							\begin{vmatrix}
+							a_{11} & a_{12} \newline
+							a_{21} & a_{22}
+							\end{vmatrix} =
+							$$
+							$$
+							= (-1)^{N(1,2)}\cdot a_{11}a_{22} + (-1)^{N(2,1)}\cdot a_{12}a_{21} = 
+							$$
+							$$=(-1)^{0}\cdot a_{11}a_{22} + (-1)^{1}\cdot a_{12}a_{21} = a_{11}a_{22} - a_{12}a_{21}
+						    $$ 
+
+
+						</script>
+					</section>
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+	
+							Аналогично, определитель для матрицы $A_{33}$ :
+
+							$$
+							\Delta = detA_{33} = 
+							\begin{vmatrix}
+							a_{11} & a_{12}  & a_{13} \newline
+							a_{21} & a_{22}  & a_{23} \newline
+							a_{31} & a_{32}  & a_{33}
+							\end{vmatrix} =
+							$$
+							$$
+							= a_{11}a_{22}a_{33} - a_{11}a_{23}a_{32} + a_{12}a_{23}a_{31} -
+							$$
+							$$- a_{12}a_{21}a_{33} -a_{13}a_{22}a_{31}  +a_{13}a_{21}a_{32}
+						    $$ 
+
+
+						</script>
+					</section>
+
+					<section data-markdown>
+
+						<script type="text/template">
+							### Определение
+	
+							По Теореме Лапласа определитель квадратной матрицы можно представить в виде суммы произведений элементов любой её строки или столбца на их алгебраические дополнения.
+
+							Разложение по $i$ -ой строке:
+							$detA = \sum\limits_{j=1}^{n} a_{ij}A_{ij}$
+
+							Разложение по $j$ -му столбцу:
+							$detA = \sum\limits_{i=1}^{n} a_{ij}A_{ij}$
+
+						</script>
+					</section>
+
+				</section>
+
+				<section>
+					
+					<h4> Вычисление определителя матрицы  2x2</h4>
+						<label>Введите матрицу: </label>
+						<textarea name ="matrixA" id="matrixA" rows="3" cols="3"></textarea>
+								<p></p>
+						<label>Определитель матрицы $=$ <output id="DetA"> </label>
+
+				</section>
+
+				<section>
+					
+					<h4> Вычисление определителя матрицы  3x3</h4>
+						<label>Введите матрицу: </label>
+						<textarea name ="matrixB" id="matrixB" rows="3" cols="3"></textarea>
+								<p></p>
+						<label>Определитель матрицы $=$ <output id="DetB"> </label>
+
+				</section>
+
+				<section>
+					
+					<h4> Вычисление определителя матрицы  4x4</h4>
+						<label>Введите матрицу: </label>
+						<textarea name ="matrixC" id="matrixC" rows="4" cols="7"></textarea>
+								<p></p>
+						<label>Определитель матрицы $=$ <output id="DetC"> </label>
+
+				</section>
+
+
+					<section data-markdown="">
+
+						<script type="text/template">
+							Операции над матрицами
+							----------------------
+	
+						</script>
+					</section>
+
+					<section data-markdown="">
+
+						<script type="text/template">
+							### Сумма матриц
+	
+						</script>
+					</section>
+
+					<section>
+					<section data-markdown="">
+
+						<script type="text/template">
+							### Сумма матриц
+							Складывать можно только матрицы одинакового размера.
+
+							Сумма матриц $A+B$ есть операция нахождения матрицы $C$, все элементы которой равны попарной сумме всех соответствующих элементов матриц $A$ и $B$, то есть каждый элемент матрицы $C$ равен
+
+							$c_{ij}=a_{ij}+b_{ij}$
+							
+						</script>
+					</section>
+
+					<section data-markdown>
+					
+						<script type="text/template">
+							### Сумма матриц
+
+							Например, сумма матриц $ A$ и $B $ размерами $2 \times 2$ вычисляется следующим образом:
+
+							$
+							A + B =
+							\begin{pmatrix}
+							a_{11} & a_{12} \newline
+							a_{21} & a_{22}
+							\end{pmatrix} +
+							$
+							$
+							\begin{pmatrix}
+							b_{11} & b_{12} \newline
+							b_{21} & b_{22}
+							\end{pmatrix} =
+							$
+
+							$
+							\begin{pmatrix} 
+							a_{11} +b_{11} & a_{12}+b_{12} \newline
+							a_{21}+b_{21} & a_{22}+ b_{22}
+							\end{pmatrix} =
+							$
+							$
+							\begin{pmatrix}
+							c_{11} & c_{12} \newline
+							c_{21} & c_{22}
+							\end{pmatrix} = C.
+							$
+							
+						</script>
+					</section>
+
+					<section data-markdown>
+					
+						<script type="text/template">
+							### Сумма матриц
+
+							Пример. Пусть даны матрицы $ A$ и $B $. Найти сумму данных матриц.
+
+							$
+							A =
+							\begin{pmatrix}
+							1 & 3 & 8 \newline
+							2 & 12 & 0 \newline
+							4 & 7 & 9
+							\end{pmatrix}
+							$
+							$
+							B = 
+							\begin{pmatrix}
+							3 & 5 & 6 \newline
+							0 & 2 & 1 \newline
+							5 & 3 & 4
+							\end{pmatrix}
+							$
+
+							$
+							A + B =
+							\begin{pmatrix}
+							4 & 8 & 14 \newline
+							2 & 14 & 1 \newline
+							9 & 10 & 13
+							\end{pmatrix}
+							$
+							
+						</script>
+					</section>
+
+				</section>
+
+
+				<section>
+					
+					<h4>Сумма матриц размерами $3 \times 3$</h4>
+						<label id="m1">Введите 1 матрицу: </label>
+						<textarea name ="matrix1" id="matrix1" rows="3" cols="3"></textarea>
+								<p></p>
+								
+							<p></p>
+					<label>Введите 2 матрицу: </label>
+						<textarea name ="matrix2" id="matrix2"rows="3" cols="3"></textarea>
+						<p></p>
+					
+						<div>Результат: <div id="resSum"></div> </div>
+						
+					
+					
+				</section>
+
+
+				
+				<section>
+
+					<h3>Подъемная сила</h3>
+					 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lop9iB6j_Bs" title="YouTube video player" 
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowfullscreen></iframe> 
+				</section>
+				-->
+
+				<section data-markdown>
+					<section data-background-color="rgb(70, 70, 255)">
+					<script type="text/template">
+						### 
+
+						
+					</script>
+				</section>
+		
+
+			</section>
+
+				<section data-background-image="img/cats.jpg" 
+					data-background-size="contain" 
+					data-menu-title="Коты">
+				</section>
+
+				
+				<section data-menu-title="Конец">
+					 <p> Спасибо за внимание!</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script> 
+		<script src="plugin/zoom/zoom.js"></script>
+
+		<script src="scripts/main.js"></script>
+
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true, 
+				progress: true,
+				controls: true,
+				slideNumber:true, ///
+				transition: 'zoom',
+				dependencies: [
+				{
+					src: 'plugin/menu/menu.js', 
+					async: true
+				},
+	
+   				],
+				   menu: {
+					side: 'left', //Расположение меню
+					numbers: true, //Нумерация слайдов
+					markers: true, //Маркер посещения
+					//Заголовки, отображаемые в меню
+					titleSelector: 'h1, h2, h3, h4, h5, h6', 
+					//Если заголовка нет, то подставляем первые слова слайда
+					useTextContentForMissingTitles: true, 
+					//Если заголовка нет, то скрываем слайд из меню
+					hideMissingTitles: false, 
+					transitions: true, //Установить меню анимации
+					openButton: true, //Скрыть кнопку меню
+					keyboard: true, //Открытие меню по кнопке m
+				},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealZoom ]
+			});
+
+
+		</script>
+
+			
+	</body>
+
+	
+</html>
