@@ -9,16 +9,11 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/serif.css" id="theme">
-
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-		<style>
-			
-
-		</style>
-
-
+		
 	</head>
+
 	<body>
 		<div class="reveal">
 			<div class="slides">
@@ -142,11 +137,7 @@
 
 				</section>
 
-				<section data-background-image="img/funny2.jpg" 
-					data-background-size="contain" 
-					
-					data-menu-title="Смешная картинка1">
-				</section>
+			
 
 				
 				<section data-markdown>
@@ -446,19 +437,7 @@
 
 
 			</section>	
-			<!-- 
-
-				<section data-markdown>
-					
-					<script type="text/template">
-						### roll-yaw-pitch
-						![rollyawpitch](img/rollyawpitch.png)
-						
-					</script>
-				</section>
-				-->
-
-				
+	
 					<section data-markdown>
 						
 						<script type="text/template">
@@ -516,7 +495,6 @@
 							$$
 							
 	
-
 						</script>
 					</section>
 
@@ -585,6 +563,12 @@
 					</section>
 
 				</section>
+
+				<section data-background-image="img/funny3.jpg" 
+				data-background-size="contain" 
+				
+				data-menu-title="Смешная картинка1">
+			</section>
 
 				<section>
 					
@@ -726,48 +710,191 @@
 
 				<section>
 					
-					<h4>Сумма матриц размерами $3 \times 3$</h4>
-						<label id="m1">Введите 1 матрицу: </label>
-						<textarea name ="matrix1" id="matrix1" rows="3" cols="3"></textarea>
+					<h4>Сумма матриц размерами 3x3</h4>
+						<label>Введите 1 матрицу: </label>
+						<textarea  id="matrix1" rows="3" cols="3"></textarea>
 								<p></p>
 								
-							<p></p>
-					<label>Введите 2 матрицу: </label>
-						<textarea name ="matrix2" id="matrix2"rows="3" cols="3"></textarea>
+								<p></p>
+						<label>Введите 2 матрицу: </label>
+						<textarea id="matrix2" rows="3" cols="3"></textarea>
 						<p></p>
 					
-						<div>Результат: <div id="resSum"></div> </div>
+						<label>Результат: <p><div id="resSum"></p></div> </label>
 						
 					
 					
 				</section>
+				<section data-markdown="">
 
-
-				
-				<section>
-
-					<h3>Подъемная сила</h3>
-					 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lop9iB6j_Bs" title="YouTube video player" 
-					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen></iframe> 
-				</section>
-				-->
-
-				<section data-markdown>
-					<section data-background-color="rgb(70, 70, 255)">
 					<script type="text/template">
-						### 
+						### Умножение матриц
 
-						
 					</script>
 				</section>
-		
+
+				<section>
+				<section data-markdown="">
+
+					<script type="text/template">
+						### Умножение матриц
+
+						Умножение матриц $AB$ — есть операция вычисления матрицы $C$, каждый элемент которой равен сумме произведений элементов в соответствующей строке первого множителя и столбце второго.
+
+						$
+						c_{ij} = \sum\limits_{k=1}^{n} a_{ik}b_{kj}
+						$
+						
+
+					</script>
+				</section>
+
+				<section data-markdown="" id="pic">
+
+					<script type="text/template">
+						### Умножение матриц
+						![Multyply](img/M_Multyply2.png)
+						
+
+					</script>
+				</section>
+
+				<section data-markdown="">
+
+					<script type="text/template">
+						### Умножение матриц
+
+						Количество столбцов в матрице $A$ должно совпадать с количеством строк в матрице $B$.
+						
+						Если матрица $A$ имеет размерность $m\times n$, $B$ — $n \times k$, то размерность их произведения $AB = C$ есть $m \times k$.
+
+					</script>
+				</section>
+
+				<section data-markdown="">
+
+					<script type="text/template">
+						### Умножение матриц
+						
+						Свойства умножения матриц:
+
+						- $(AB)C = A(BC)$
+						- $AB \neq BA$
+						- $(A+B)C = AC + BC$
+						- $(\lambda A)B = A (\lambda B) =\lambda (AB)$ ($\lambda = const)$
+
+					</script>
+				</section>
+				
+				</section>
+
+				<section data-markdown="">
+
+					<script type="text/template">
+						### Умножение матриц
+						
+						Пример умножения матриц:
+
+						$
+						A_{3\times3} =
+						\begin{pmatrix}
+						1 & 2 & 0 \newline
+						2 & 3 & 5 \newline
+						4 & 1 & 7
+						\end{pmatrix}
+						$
+						$
+						B_{3\times1} = 
+						\begin{pmatrix}
+						3  \newline
+						8  \newline
+						1
+						\end{pmatrix}
+						$
+
+						$
+						C_{3\times1} =
+						\begin{pmatrix}
+						1\times3 + 2\times8 + 0\times1 \newline
+						2\times3 + 3\times8 + 5\times1 \newline
+						4\times3 + 1\times8 + 7\times1
+						\end{pmatrix} =
+						$
+						$
+						\begin{pmatrix}
+						19 \newline
+						35 \newline
+						27
+						\end{pmatrix} 
+						$
+					</script>
+				</section>
+
+				<section>
+					
+					<h4>Произведение матриц размерами 3x3</h4>
+						<label>Введите 1 матрицу: </label>
+						<textarea  id="matr1" rows="3" cols="3"></textarea>
+								<p></p>
+								
+								<p></p>
+						<label>Введите 2 матрицу: </label>
+						<textarea id="matr2" rows="3" cols="3"></textarea>
+						<p></p>
+					
+						<label>Результат: <p><div id="resMult"></p></div> </label>
+						
+					
+					
+				</section>
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						#### Исходный код вычисления определителя матриры 2x2
+						```
+						let A = document.querySelector('#matrixA'); 
+						let det;
+							 let a = A.value.split("\n");
+							 for (let i in a) {
+								a[i] = a[i].split(" ");
+							}
+							
+							det= +a[0][0] * +a[1][1] - +a[1][0] * +a[0][1];
+						```
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					
+					<script type="text/template">
+						#### Исходный код произведения матриц размерами 3x3
+						```
+						let matrix =[];
+						for (let i in a) {
+							
+							matrix[i]=[];
+
+							for (let j in a[i]) {
+								matrix[i][j]=0;
+
+								for (k = 0; k < 3; k++){
+
+									matrix[i][j] += +(a[i][k])* +(b[k][j]);
+
+								}
+							}                                  
+						}
+						```
+					</script>
+				</section>
 
 			</section>
 
-				<section data-background-image="img/cats.jpg" 
+				<section data-background-image="img/funny1.jpg" 
 					data-background-size="contain" 
-					data-menu-title="Коты">
+					data-menu-title="Кот">
 				</section>
 
 				
@@ -792,11 +919,12 @@
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
+			
 			Reveal.initialize({
 				hash: true, 
 				progress: true,
 				controls: true,
-				slideNumber:true, ///
+				slideNumber:true, 
 				transition: 'zoom',
 				dependencies: [
 				{
